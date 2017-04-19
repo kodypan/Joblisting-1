@@ -6,11 +6,11 @@ Rails.application.routes.draw do
        post :publish
        post :hide
      end
-   end
-end
-   resources :jobs do
-     resources :resumes
-   end
 
+
+
+   resources :resumes
+   end
+ end
  root 'jobs#index'
  end
