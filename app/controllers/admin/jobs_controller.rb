@@ -2,7 +2,9 @@ class Admin::JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destory]
   before_action :require_is_admin
 layout "admin"
+
 def publish
+
    @job = Job.find(params[:id])
    @job.publish!
    redirect_to :back

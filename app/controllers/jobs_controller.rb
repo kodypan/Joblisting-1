@@ -11,6 +11,7 @@ def index
              end
 end
 
+
 def show
   @job = Job.find(params[:id])
 
