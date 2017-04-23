@@ -19,7 +19,8 @@
 @import "bootstrap";
 @import "font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .jumbotron {
   background-image: url("/images/england.jpg") ;
@@ -39,7 +40,7 @@
      margin: 0;//上下左右margin为0
      font-size: 26px;//字体大小
 
-     background-color: rgba(250, 250, 250, 0.08);//背景颜色含透明度
+     background-color: rgba(250, 250, 250, 0.03);//背景颜色含透明度
      padding: 20px;//上下左右padding为20px
      text-align:right;//文字左对齐
      color: #fff;//字体颜色
@@ -74,7 +75,7 @@
     margin-right: 0;
     padding: 13px 40px;
     border-radius: 40px;
-    background-color: #19C8BE;
+    background-color: #42C48B;
 
     /* -webkit-transition: background-color .3s ease,box-shadow .3s ease,color .3s ease; */
 
