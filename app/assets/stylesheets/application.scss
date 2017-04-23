@@ -22,7 +22,7 @@
 
 
 .jumbotron {
-  background-image:url('england.jpg');
+  background-image: url("/images/england.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -74,7 +74,7 @@
     margin-right: 0;
     padding: 13px 40px;
     border-radius: 40px;
-    background-color: #2EC898;
+    background-color: #19C8BE;
 
     /* -webkit-transition: background-color .3s ease,box-shadow .3s ease,color .3s ease; */
 
