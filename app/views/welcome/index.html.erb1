@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Voffer </title>
+
+<!-- 大屏 -->
+  </head>
+
+  <body>
+    <div class="jumbotron">
+        <div class="container">
+  <h1>Voffer<br><small>您的工作专属管家<small></h1>
+  <p>我们提供专业定制化服务<br>建起您与企业的桥梁
+  <br><small>还等什么马上进入<small></p>
+  <p><a class="btn btn-primary btn-lg" href="/jobs" role="button">开启你的成功</a></p>
+  </div>
+</div>
+
+
+<!-- <img src="<%= image_url 'london-eye-1930511_1920.jpg' %>" 大屏-->
+
+  <div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0"
+            class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"  class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2"  class="active"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+
+        <div class="item active"><a target="_blank" href="http://www.jianliheike.com/"><img src="<%= image_url 'building190.jpg' %>"alt="First slide"></a>
+          <div class="carousel-caption">
+            <h4>选择专业定制化服务的让您的简历脱颖而出</h4>
+          </div>
+        </div>
+        <div class="item"><a target="_blank" href="http://www.jianliheike.com/"><img src="<%= image_url 'london-eye-190.jpg' %>" alt="Third slide"></a>
+              <div class="carousel-caption">
+
+                <h4>标题2</h4>
+                <p>内容内容内容内容内容内容内容内容内容内容内容内容</p>
+              </div>
+            </div>
+        <div class="item"><img src="<%= image_url 'london-crowd.jpg' %>" alt="Third slide"><a target="_blank" href="http://www.jianliheike.com/"></a>
+              <div class="carousel-caption">
+                <h4>标题3</h4>
+                <p>内容内容内容内容内容内容内容内容内容内容内容内容</p>
+              </div>
+            </div>
+
+
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+        data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel"
+        data-slide="next">&rsaquo;</a>
+    <!-- 控制按钮 -->
+
+
+
+</div>
+<script>
+var $carousel = $("myCarousel").carousel({
+    interval: 2000
+  });
+</script>
+
+
+
+<div class="container1">
+    <div class="row">
+        <h2 class="section-title">我们帮您快速地找到适合工作</h2>
+        <div class="col-xs-12 col-sm-6">
+
+        <%= image_tag 'pic-2.jpg', class: 'img-responsive' %><h2 class="advantage-title">试试换个姿势投简历</h2>
+        <p class="lead"><a target="_blank" href="http://www.jianliheike.com/">简历黑客为您提供专业简历解决方案 </p></a>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 ">
+
+            <%= image_tag 'pic-3.jpg', class: 'img-responsive' %><h2 class="advantage-title">成功不再是梦想</h2>
+         <p class="lead"><a target="_blank" href="http://www.xinshengdaxue.com">全栈营为您提供全栈工程师培训 </p>  </a>
+
+          </div>
+
+
+
+<!-- 框图 -->
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  -->
+
+
+
+
+</div>
+
+  </body>
+</html>

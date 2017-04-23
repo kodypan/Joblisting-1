@@ -19,29 +19,52 @@
 @import "bootstrap";
 @import "font-awesome";
 
+//---------Navbar---------
+.navbar-brand > img {
+     display: inline-block; //图片和链接文字显示在同一行
+     margin-right: 10px; //图片和链接文字拉开一点距离
+     width: 32px; //定制图片宽度
+     height: 32px; //定制图片高度
+   }
+   .carousel-inner > .item {
+    height: 550px;
+}
+
+.carousel-inner > .item > img{
+      width: 80%;
+      margin: auto;
+}
+.carousel-inner .item img {
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+//转图
+//巨屏
 
 .jumbotron {
-  background-image:url('england.jpg');
+  background-image:url('bigben.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
 
-
+  padding-bottom: 110px;
 }
-.jumbotron h1{
-  text-align: right;//文字左对齐
-  background-color: rgba(250, 250, 250, 0.07);//背景颜色含透明度
+.jumbotron h1, .jumbotron .h1{
+  text-align: center;//文字左对齐
+   max-width: 500px;//最大宽度
+  background-color: rgba(250, 250, 250, 0.1);//背景颜色含透明度
      color: #fff;  //字体颜色
       padding: 50px 20px 0;//上50px，左右20px，下0
 }
 .jumbotron p {
      margin: 0;//上下左右margin为0
      font-size: 26px;//字体大小
-
-     background-color: rgba(250, 250, 250, 0.08);//背景颜色含透明度
+     max-width: 500px;//最大宽度
+     background-color: rgba(250, 250, 250, 0.3);//背景颜色含透明度
      padding: 20px;//上下左右padding为20px
      text-align:right;//文字左对齐
-     color: #fff;//字体颜色
+     color: #222;//字体颜色
 
      border-bottom-right-radius: 3px;//右下角圆边
      border-bottom-left-radius: 3px;//左下角圆边
@@ -66,21 +89,9 @@
   text-align: center;
   color: white;
 }
-
- //button
- .button {
-    display: inline-block;
-    margin-right: 0;
-    padding: 13px 40px;
-    border-radius: 40px;
-    background-color: #2EC898;
-
-    /* -webkit-transition: background-color .3s ease,box-shadow .3s ease,color .3s ease; */
-
-    color: #fff;
-    text-align: center;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-shadow: none;
-}
+section
+ .container-fluid .jumbotron{
+   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
+   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+   border-radius: 0;//圆角为0
+ }
