@@ -164,21 +164,21 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND2</a></li>
-        <li><a href="#tour">TOUR3</a></li>
+        <li><a href="#myPage">主页</a></li>
+        <li><a href="#band">他们怎么说</a></li>
+        <li><a href="#tour">For You</a></li>
         <li><a href="#contact">About Me</a></li>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to("企业用户", admin_jobs_path) %> </li>
+
           <% if !current_user %>
 
 
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人用户 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                  <li><%= link_to("注册 signup", new_user_registration_path) %></li>
+              <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
                     <li role="separator" class="divider"></li>
-                  <li><%= link_to("登陆 login", new_user_session_path) %></li>
+                <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>
 
 
 
@@ -203,6 +203,8 @@
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
+
+
   </div>
 </nav>
 <div class="jumbotron">
